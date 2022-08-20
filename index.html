@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +19,50 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  
+  <div class="main">
+    <div class="control-section">
+      <h1 class="title">Etch-A-Sketch &#128396;</h1>
+      <div class="settings">
+        <button id="clear" class="btn">Clear</button>
+        <button id="color" class="btn">Color Mode</button>
+        <button id="rainbow" class="btn">Rainbow Mode</button>
+        <button id="eraser" class="btn">Eraser Mode</button>
+        <div class="slider-container">
+          <div id="grid-layout-display">Current Layout: 16 X 16</div>
+          <input type="range" min="1" max="100" value="16" id="slider">
+        </div>
+        <div class="color-container">
+          <div id="color-instruction">Pick a color of your choice</div>
+          <input type="color" value="#000000" id="color-picker">
+        </div>
+      </div>
+    </div>
+    <div id="grid-section">
+      <div id="grid-container"></div>
+    </div>
+  </div>
+  <footer>
+    <div class="creator">
+      Created by <a href="https://github.com/evronz" target="_blank">evronz</a>
+    </div>
+  </footer>
 </body>
 </html>
+
+<!-- 
+  if(currentMode === 'rainbow'){
+    rainbowBtn.classList.add('active');
+  } else if(currentMode === 'eraser'){
+    eraserBtn.classList.remove('active');
+  } else {
+    colorBtn.classList.remove('active');
+  }
+
+  if(newMode === 'rainbow'){
+    rainbowBtn.classList.add('active');
+  } else if(newMode === 'eraser'){
+    eraserBtn.classList.add('active');
+  } else {
+    colorBtn.classList.add('active');
+  }
+ -->
